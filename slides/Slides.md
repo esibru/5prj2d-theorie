@@ -461,7 +461,7 @@ Passer de la cascade à l’agile, c’est changer de manière de voir le projet
 
 --- 
 
-# Une méthode agile : eXtreme Programming (XP)
+# Une méthode agile : l'eXtreme Programming (XP)
 
 XP favorise l’agilité à plusieurs niveaux :
 - **Code** : qualité, tests automatisés, refactoring
@@ -481,7 +481,7 @@ Parmi les méthodes agiles, XP est l’une des plus connues pour sa focalisation
 
 **Rôles** : Client, Testeur, Développeurs, Coach
 
-**Artifact** : Logiciel, Histoires, Scénarios de tests
+**Artifacts** : Logiciel, Histoires, Scénarios de tests
 
 **Pratiques** : Livraisons fréquentes, Planification itérative, Client sur site,Rythme durable, Pair Programming, Responsabilité collective du code
 
@@ -544,13 +544,774 @@ mais qu'elle n'est toujours pas terminée. Il ajoute qu'il **devrait la finir de
 
 Partie 2 : Gestion de projet XP
 
+---
+# Guide : les 4 valeurs XP
+
+<div class="columns">
+<div>
+
+1. **Communication**  
+   - Favoriser les échanges constants entre développeurs et client  
+   - Questions et réponses rapides pour éviter les malentendus
+
+2. **Simplicité**  
+   - Concevoir et coder uniquement ce qui est nécessaire  
+   - Éviter les solutions complexes ou prématurées
+
+</div>
+<div>
+
+3. **Feedback**  
+   - Recevoir des retours fréquents via tests, livraisons et stand-ups  
+   - Permet d’ajuster rapidement le produit et les priorités
+
+4. **Courage**  
+   - Corriger les erreurs sans délai  
+   - Remettre en question les décisions passées si nécessaire
+
+</div>
+</div>
+
+<!-- notes
+
+
+-->
+
 --- 
-  
+
+# Les principes de la démarche XP
+
+**Trouver un rythme soutenable** : avancer régulièrement sans surcharge  
+
+**Redéfinir fréquemment le projet** : intégrer les retours et ajuster la direction  
+
+**Maintenir l’équilibre** : coopération constante entre développeurs et client 
+
+**Pratiques poussées à l’extrême** : tests, intégration continue, feedback rapide 
+
+<!-- notes
+
+
+-->
+
+---         
+<!-- _class: transition -->  
+
+ Les principes de la démarche XP<br> en détails
+
+---
+# Principe I : Trouver un rythme soutenable
+
+Un projet est toujours contraint par 4 variables :  
+
+- Le **coût** : salaire, matériel, charge, toutes les consommations exprimée en €
+- Les **délais** : retards fragilisent la confiance et augmentent les coûts indirects  
+- La **qualité** : réduire la qualité augmente le temps de développement futur  
+- Le **contenu** : la seule variable réellement ajustable   
+
+
+
+<!-- notes
+
+
+-->
+
+---
+
+# Principe I : Trouver un rythme soutenable
+
+Aller trop vite ou trop lentement nuit au projet :  
+
+- **Trop vite** : code bâclé, dette technique, régressions fréquentes  
+- **Trop lentement** : perte de valeur, frustration du client, coûts accrus  
+
+L’objectif en XP est de **trouver un rythme soutenable** qui permet de livrer en continu **sans sacrifier la qualité**.
+
+<!-- notes
+
+
+-->
+
+---
+
+# Principe II : (Re)définir fréquemment le projet
+
+- **Waterfall** : « Visez… feu ! Raté… »  
+- **XP** : « Feu ! Visez… visez… visez… »  
+
+En XP, le projet n’est pas figé : il est **réévalué en continu** pour rester aligné avec les besoins. Les spécifications sont définies tout au long du projet.
+
+<!-- notes
+
+
+-->
+
+---
+
+# Principe II : (Re)définir fréquemment le projet
+## Phase initiale
+
+Le projet commence par une **exploration globale** :  
+- Comprendre le problème et les besoins du client  
+- Identifier les contraintes et choix techniques majeurs  
+- Établir une estimation initiale des coûts et délais  
+- Rester à un **niveau de granularité large** (pas de détails prématurés)  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Principe II : (Re)définir fréquemment le projet
+## Création d'un plan de livraisons
+
+- Élaboré à partir des estimations initiales  
+- Le **client fixe les priorités** : les fonctionnalités les plus importantes en premier  
+- Livraison rapide pour obtenir des retours concrets  
+- Les versions successives apportent progressivement de la valeur  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Principe II : (Re)définir fréquemment le projet
+## Ajustements en continu
+
+- Le **plan peut évoluer** : ajout, retrait, ou report de fonctionnalités  
+- Les décisions s’appuient sur :  
+  - l’expérience acquise au fil du projet  
+  - les retours utilisateurs  
+  - les coûts estimés de chaque itération  
+- On ajuste surtout la **variable "contenu"** du projet, tout en gardant rythme, coût et qualité stables 
+
+<!-- notes
+
+
+-->
+
+---
+
+# Principe III : Maintenir l’équilibre
+
+La démarche XP ne fonctionne que si **client et développeurs coopèrent** :  
+- Si le **client a trop de pouvoir**, il impose l’impossible et épuise l’équipe  
+- Si les **développeurs dominent**, ils risquent de construire une solution trop générique, inutile pour le client  
+
+XP cherche à maintenir un **équilibre durable**.
+
+<!-- notes
+
+
+-->
+
+---
+
+# Principe III : Maintenir l’équilibre
+
+À chaque itération, le projet avance grâce à un **cycle de collaboration** :  
+
+1. **Client** : définit les fonctionnalités souhaitées  
+2. **Développeurs** : estiment le coût et la faisabilité  
+3. **Client** : sélectionne les fonctionnalités prioritaires  
+4. **Développeurs** : implémentent et livrent une nouvelle version  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Principe IV : Des pratiques poussées à l’extrême
+
+**Client sur site** : le client participe au quotidien pour guider et prioriser  
+
+**Rythme durable** : avancer régulièrement sans surcharge de l’équipe  
+
+**Livraisons fréquentes** : petites versions livrées souvent pour obtenir des retours  
+
+**Planification itérative** : ajuster le plan à chaque cycle selon l’expérience acquise  
+
+<!-- notes
+
+
+-->
+
+---         
+<!-- _class: transition -->  
+
+ Les pratiques XP<br> en détails
+
+---
+
+# Pratique I : Client sur site
+## Principe
+
+Favoriser la communication directe entre programmeurs et client :  
+- Idéalement dans le même bâtiment, voire le même bureau  
+- Questions → réponses immédiates, sans lourdeur documentaire  
+- Pas besoin de cahier des charges figé : la **communication permanente** fait office de spécification  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique I : Client sur site
+## Le rôle du client
+
+- Apporte son expertise métier et clarifie les besoins  
+- Répond directement aux questions fonctionnelles  
+   - **Waterfall** : le développeur doit deviner une solution, parfois erronée  
+   - **XP** : le client est présent pour lever toute ambiguïté  
+- Définit les **tests de recette** (acceptance tests), souvent automatisés → équivalent des spécifications fonctionnelles  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique I : Client sur site
+## Les limites pratiques
+
+- Difficile d’avoir un client disponible en permanence  
+- Plusieurs personnes peuvent partager ce rôle  
+- Mais il faut limiter le nombre d’intervenants pour garder la cohérence  
+
+La présence du client (ou d’un représentant) reste un **facteur clé de succès en XP**.  
+
+<!-- notes
+
+
+-->
+
+---
+# Pratique II : Rythme durable
+## Trouver l’équilibre
+
+- Un projet réussi demande **énergie et régularité**  
+- L’équipe doit avoir du temps pour :  
+  - concevoir simplement  
+  - coder proprement  
+  - tester correctement  
+  - résoudre les problèmes  
+- La qualité dépend directement de la capacité à travailler **sans épuisement**  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique II : Rythme durable
+## La règle XP
+
+- En XP : **pas d’heures supplémentaires deux semaines de suite**  
+- Les surcharges répétées provoquent une baisse de qualité, des bugs, la démotivation  
+- Si l’équipe n’avance pas dans un rythme normal :  
+  - on cherche la **véritable cause** (organisation, dépendances, priorités)  
+- L’objectif est un rythme **soutenable**, garant de la qualité et de la motivation à long terme  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique III : Livraisons fréquentes
+## Principes
+
+- Première livraison très rapide pour **éviter les malentendus et gagner la confiance du client**  
+- Livraisons suivantes rapprochées pour **un pilotage précis et des preuves régulières d’avancement**  
+- Les livraisons peuvent être **quotidiennes** grâce à :  
+  - l’intégration continue  
+  - les tests automatisés  
+- Limites possibles : processus lourd, validations externes, logiciels embarqués
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique III : Livraisons fréquentes
+## Avantages
+
+- **Feedback client régulier** qui permet un ajustement des besoins pour les livraisons suivantes  
+- **Feedback équipe** :  
+  - sentiment de « travail fini »  
+  - motivation entretenue  
+  - meilleure visibilité sur la qualité du produit  
+- **Logiciel confronté à l’environnement réel** ce qui permet une détection précoce des problèmes de performance ou compatibilité
+
+<!-- notes
+
+
+-->
+
+---
+# Pratique IV : Planification itérative
+
+- Les **livraisons fréquentes** définissent quand le logiciel est livré, mais pas **quoi** livrer  
+- La **planification itérative** définit le contenu de chaque livraison  
+- Se fait lors de **séances collectives** appelées **planning game**  
+  - Aspect « jeu » : moins de tension, collaboration renforcée  
+  - Objectif : tirer le meilleur produit du projet
+
+<!-- notes
+
+
+-->
+
+---
+# Pratique IV : Planification itérative
+## Itérations et livraisons
+
+- Le projet est découpé en **itérations** et **livraisons** :  
+  - **Itération** : 1 à 3 semaines, développement d’un petit ensemble de fonctionnalités  
+  - **Livraison** : regroupement d’itérations aboutissant à un produit utilisable  
+- Les itérations permettent de **réévaluer les priorités** et ajuster le contenu des prochaines livraisons 
+
 <center>
 
-![](./img/work-in-progress.jpeg)
+![height:200px](./img/livraisons_vs_iterations.png)
 
 </center>
+
+<!-- notes
+
+
+-->
+
+--- 
+
+# Pratique IV : Planification itérative
+
+<center>
+
+![height:500px](./img/planificatioin_client_dev.png)
+
+</center>
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative 
+## Phase d’exploration des livraisons
+### Définition des scénarios
+
+- Le client définit des **scénarios simples** (user stories)  
+  - Histoire complète avec début et fin  
+  - Rédigés par le client, souvent avec un coach  
+  - Dans un langage simple, à la main  
+- Objectif : décrire l’interaction entre utilisateur et système pour chaque fonctionnalité  
+- Granularité sommaire, facile à manipuler et à partager  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d’exploration des livraisons
+### Manipulation et organisation des scénarios
+
+- Chaque scénario est écrit sur une **fiche cartonnée (A5)** :  
+  - Permet de manipuler, trier, fusionner ou supprimer facilement  
+  - Les fiches remplacent les documents lourds ce qui respecte la valeur simplicité
+- Exemple de fiche : user story + points + priorité + risque technique  
+- Les détails seront complétés oralement lors des échanges avec les développeurs  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d’exploration des livraisons
+### Planning game
+
+- Chaque scénario est **priorisé par le client**
+   - P1 = indispensable, P2 = essentiel, P3 = utile  
+- Le planning game permet de :  
+  - Discuter des scénarios avec l’équipe  
+  - Répartir les scénarios dans les itérations pour livrer les plus importantes d’abord  
+- Collaboration client-développeurs → ajustement des priorités et clarification des besoins  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d’exploration des livraisons 
+### Estimation des scénarios
+
+- Les développeurs évaluent **en points** : difficulté et envergure  
+- Points comparatifs → 1 point = 1 unité de temps idéal (ex. 1 heure ou 1 jour selon projet)  
+- Intègre code, documentation, tests unitaires et tests de recette  
+- En cas d’inconnues techniques → prototypes rapides (**spikes**) pour estimer  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d’exploration des livraisons : Poker Planning
+
+<center>
+
+![height:400px](./img/poker_planning.jpeg)
+
+</center>
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d’exploration des livraisons 
+### Scission et fusion des scénarios
+
+- Scission : scénario trop gros → découper en plusieurs pour mieux gérer  
+- Fusion : scénarios très petits → regrouper pour simplifier l’estimation  
+- Objectif : obtenir des **unités de travail cohérentes et estimables**  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d’exploration des livraisons
+### Durée et pratique
+
+- Jusqu’à ce que tous les scénarios soient définis et estimés  
+- **Premières itérations** : plusieurs heures à quelques jours  
+- **Itérations suivantes** : quelques heures suffisent  
+- Dépend de la **vision à long terme** : bien définir les besoins permet de mieux planifier et estimer le projet  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d'engagement des livraisons
+
+Il faut répartir les scénarios dans les livraisons à venir pour établir le **plan de livraison**  
+
+Processus général :  
+1. **Client** : tri des scénarios par priorité (déjà effectué au début du planning game)
+2. **Équipe** : tri par risque technique (fort, moyen, faible)  
+3. **Client** : sélection et répartition dans les livraisons  
+4. **Équipe** : annonce la vélocité disponible  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d'engagement des livraisons : tableau priorités / risques
+
+- Visualisation des scénarios selon **priorité** et **risque** :  
+
+| Priorité \ Risque   | Fort      | Moyen     | Faible    |
+|--------------------|-----------|-----------|-----------|
+| P1 indispensable   | 📄 📄     | 📄       | 📄 📄 📄  |
+| P2 essentiel       | 📄       | 📄 📄     | 📄       |
+| P3 utile           |           | 📄       | 📄 📄     |
+
+- Chaque 📄 représente un scénario (user story)  
+- Permet de **planifier intelligemment** quelles histoires seront implémentées en premier  
+- Favorise l’équilibre entre valeur métier et complexité technique
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase d'engagement des livraisons : vélocité et répartition
+
+- **Vélocité** : total des points des scénarios **terminés correctement** dans l’itération précédente  
+- Permet au client de savoir **combien de points “dépenser”** pour choisir les scénarios de la prochaine livraison  
+- Première itération : coach fournit une estimation initiale  
+- Répartition :  
+  - Le client choisit des scénarios dont la somme des points ≈ vélocité  
+  - Priorité aux scénarios les plus importants  
+- Le coach veille à **l’équilibre client / développeurs** et au respect du rythme durable
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase de pilotage des livraisons : suivi et indicateurs
+
+- Il faut  **contrôler l’avancement et la qualité** du projet  
+- Deux indicateurs clés :  
+
+1. **Suivi des tests de recette**  
+   - Valide que les fonctionnalités livrées correspondent aux besoins  
+   - Permet de détecter rapidement les anomalies ou régressions  
+
+2. **Burndown chart (Scrum)**  
+   - Représente l’avancement du travail restant sur une itération  
+   - Permet au client et à l’équipe de visualiser la progression et d’ajuster le plan  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase de pilotage des livraisons - Suivi des tests de recette
+
+<center>
+
+![height:400px](./img/suivi_tests_recette.png)
+
+</center>
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase de pilotage des livraisons - Burndown chart (Scrum)
+
+
+<center>
+
+![height:400px](./img/burdown_chart.png)
+
+</center>
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Phase de pilotage des livraisons : gestion des défauts
+
+- Il faut **corriger les anomalies rapidement** en maintenant le rythme du projet  
+- Lorsqu’un défaut apparaît, il faut :  
+  1. **Créer un scénario de correction**  
+     - Estimer le coût de la réparation en points  
+     - Marquer le scénario comme **priorité maximale**  
+  2. **Ou corriger immédiatement** si le défaut bloque le développement  
+     - Normalement, les défauts sont **rares** et critiques  
+
+- L’équipe choisit la stratégie en fonction de **l’impact du défaut** sur la livraison et la continuité des itérations
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Fin d’un cycle de livraison
+
+- La **phase de pilotage** s’arrête à la livraison :  
+  - Livraison effectuée même si tous les scénarios ne sont pas terminés  
+  - On joue sur la **variable contenu**, pas sur les délais  
+- Importance de **célébrer la livraison** pour motiver l’équipe (repas, feedback, reconnaissance)  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Début d’un nouveau cycle de livraison
+
+- Redéfinir les **durées effectives** de réalisation des scénarios  
+- Mettre à jour les estimations des scénarios restants si nécessaire  
+- Déterminer plus précisément la **vélocité de l’équipe** pour la prochaine itération  
+- Objectif : planifier les prochaines livraisons avec réalisme et fiabilité  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Dernière livraison - La fin du projet
+
+- Décision du **client** : Le projet se termine lorsque les scénarios restants ne justifient plus l’investissement  
+- Les critères : valeur métier, coût, priorité restante  
+- Permet de clore le projet de manière **raisonnée et contrôlée**
+
+<!-- notes
+
+
+-->
+
+--- 
+
+# Pratique IV : Planification itérative
+
+<center>
+
+![height:500px](./img/planificatioin_client_dev.png)
+
+</center>
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Les itérations : phase d’exploration
+
+À chaque début d’itération :  
+- Les développeurs posent toutes les **questions au client** pour clarifier les scénarios  
+- Division des scénarios en **tâches techniques** (en présence du client)  
+  - 1 tâche ≈ 2 à 4 heures pour un binôme  
+  - Souvent un peu de conception est nécessaire  
+
+**Exemple** :  
+Scénario : "L’utilisateur peut conserver ses adresses favorites"  
+- Tâches : "Créer la classe SitePréféré", "Ajouter une option au menu Adresses"
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Les itérations : phase d’engagement
+
+- **Choix et estimation des tâches** :  
+  - Développeur volontaire → responsable de la tâche  
+  - Estimation en heures de "temps idéal" par comparaison avec tâches précédentes  
+- **Équilibrage des charges** :  
+  - Répartir uniformément la charge entre développeurs  
+  - Binômes : 50% du temps pour les tâches personnelles  
+- **Répartition dans le tableau** : colonnes = Tâche | Qui | Temps prévu | Finie  
+- **Ajustement des scénarios** : ajout ou suppression si certains développeurs sont sous-chargés  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Les itérations : tableau de répartition des tâches
+
+| Tâche                        | Qui         | Temps prévu | Finie |
+|-------------------------------|------------|------------|-------|
+| Créer la classe SitePréféré   | Alice/Bob  | 3 h        | ❌    |
+| Ajouter option au menu Adresses | Charlie/Dave | 2 h     | ✅    |
+| Implémenter sauvegarde favoris | Alice/Bob | 4 h        | ❌    |
+| Tests unitaires SitePréféré    | Charlie/Dave | 2 h      | ✅    |
+
+- Chaque ligne représente une tâche issue d’un scénario  
+- **Qui** : binôme responsable  
+- **Temps prévu** : estimation en heures de temps idéal  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Les itérations : phase de pilotage
+
+- **Stand-up meetings** :  
+  - 10 minutes par jour, debout  
+  - Chaque développeur fait un point rapide sur sa situation  
+  - Pas une réunion technique 
+- **Suivi régulier** : deux fois par semaine, le tracker demande :  
+  - Temps passé sur chaque tâche et temps restant estimé  
+- **Gestion des dérapages** :  
+  - Brainstorming pour simplifier les tâches  
+  - Faire intervenir un binôme plus expérimenté  
+  - Réattribuer la tâche si nécessaire   ou retirer un scénario si toute l’équipe est surchargée  
+
+<!-- notes
+
+
+-->
+
+---
+
+# Pratique IV : Planification itérative
+## Fin d’itération
+
+- **Mini-livraison du logiciel au client**  
+  - Tous les tests de recette passent  
+  - Mise à jour des coûts des scénarios réalisés (somme des durées des tâches)  
+- **Célébration** : boissons, gâteaux, reconnaissance du travail accompli
+
+<!-- notes
+
+
+-->
 
 ---
 <!-- _class: transition2 -->  
