@@ -948,6 +948,16 @@ La présence du client (ou d’un représentant) reste un **facteur clé de succ
 ---
 
 # Pratique IV : Planification itérative
+
+<center>
+
+![height:400px](./img/fiche.png)
+
+</center>
+
+---
+
+# Pratique IV : Planification itérative
 ## Phase d’exploration des livraisons
 ### Planning game
 
@@ -982,6 +992,17 @@ La présence du client (ou d’un représentant) reste un **facteur clé de succ
 ---
 
 # Pratique IV : Planification itérative
+## Phase d’exploration des livraisons 
+### Estimation en heures à éviter
+
+- **Illusion** de précision  
+- Difficilement comparable entre personnes  
+- **Bloque la discussion** sur la valeur vs l’effort  
+- Les points permettent une **abstraction** utile  
+
+---
+
+# Pratique IV : Planification itérative
 ## Phase d’exploration des livraisons : Poker Planning
 
 <center>
@@ -996,14 +1017,30 @@ La présence du client (ou d’un représentant) reste un **facteur clé de succ
 -->
 
 ---
+# Pratique IV : Planification itérative
+## Phase d’exploration des livraisons : Suite de Fibonacci
+
+| Points | Exemple de Story |
+|--------|------------------|
+| 1      | Correction d’un bug mineur |
+| 3      | Formulaire simple avec 2 champs |
+| 5      | Fonctionnalité avec règles métiers |
+| 8      | Nouvelle page avec intégration API |
+| 13+    | Trop gros → découpage nécessaire |
+
+> **T-shirt sizes** (XS, S, M, L, XL) 
+
+---
 
 # Pratique IV : Planification itérative
 ## Phase d’exploration des livraisons 
 ### Scission et fusion des scénarios
 
-- Scission : scénario trop gros → découper en plusieurs pour mieux gérer  
+- Scission : scénario trop gros → découper en plusieurs pour mieux gérer
 - Fusion : scénarios très petits → regrouper pour simplifier l’estimation  
 - Objectif : obtenir des **unités de travail cohérentes et estimables**  
+
+> EPIC : grand récit qui sera composé de nombreux récits utilisateurs
 
 <!-- notes
 
@@ -1270,7 +1307,7 @@ Scénario : "L’utilisateur peut conserver ses adresses favorites"
 
 - Chaque ligne représente une tâche issue d’un scénario  
 - **Qui** : binôme responsable  
-- **Temps prévu** : estimation en heures de temps idéal  
+- **Temps prévu** : estimation en heures de temps idéal, **équilibrage nécessaire**
 
 <!-- notes
 
@@ -1320,12 +1357,280 @@ Partie 3 : Gestion d'équipe XP
 
 --- 
  
+# Organisation et rôles en XP
+
+Une bonne équipe = plus de chance de réussite  
+- Bonne équipe ≠ seulement bonnes compétences techniques  
+- Esprit d’équipe primordial  
+- XP favorise collaboration et responsabilisation  
+- Chaque membre a **un rôle défini** 
+
+--- 
+
+# Rôles
+
+<div class="columns">
+<div align="center">
+
+## Listes des rôles à attribuer 
+
+Programmeur·se (ou Développeur·se)
+Client·e
+Testeur·se
+Tracker
+Manager
+Coach
+
+</div>  
+<div>   
+
+![backend h:400 left drop-shadow:0,5px,10px,rgba(0,0,0,.4)](../img/roles.png)
+
+</div>    
+</div>   
+
+--- 
+# Programmeur·se
+
+Le terme Programmeur·se est plus large qu’au sens stricte
+- Il/Elle **code**  
+- Il/Elle **teste**  
+- Il/Elle **écoute le client** (pour écrire de bons tests)  
+- Il/Elle **conçoit (design)**
+
+**Ses qualités humaines sont aussi importantes que ses qualités techniques.**
+
+--- 
+# Programmeur
+
+Au sein d’une équipe
+- il faut des éléments expérimentés avec l’envie de partager
+- les éléments moins expérimentés doivent avoir l’envie d’apprendre
+- le cadre d’XP est idéal pour l’apprentissage grâce à la communication
+
+--- 
+# Programmeur
+
+Pour motiver chaque programmeur
+- XP responsabilise chacun
+- dans le code, les tests, l’écoute du client
+- Seuls les programmeurs vont définir les charges et les délais
+- Pas les clients, le manager, le coach, ..
+
+---
+
+# La charte des droits du programmeur
+
+**Développeurs, vous avez le droit**
+- de savoir ce qui est demandé, avec des priorités clairement déclarées;
+- de fournir un travail de qualité en toute occasion;
+- de demander et recevoir de l’aide de la part de vos pairs, de vos clients;
+- d’émettre et de réviser vos propres estimations de coûts;
+- d’accepter des responsabilités, qui ne peuvent vous être imposées;
+- de travailler à un rythme de travail durable.
+
+---
+
+# Client
+
+- Définit **ce que fait le logiciel** et **comment**  
+- Communication constante avec l’équipe  
+- Définit besoins via **scénarios (user stories)**  
+- Peut être :  
+  - le vrai client  
+  - un représentant (proxy)  
+  - Si impossible: désignation d’un client artificiel qui jouera ce rôle
+  - la communication entre l’équipe et le vrai client ne passera que par une seule personne : Single person of contact **SPOC**
+
+---
+
+# La charte des droits du client
+
+Client, vous avez le droit
+- à un plan d’ensemble, montrant ce qui peut être accompli, pour quand, à quel coût;
+- d’obtenir le plus de valeur possible de chaque semaine de programmation;
+- de voir des progrès sur une application qui marche, comme doivent le prouver les tests répétables que vous spécifiez;
+- de changer d’avis, de substituer des fonctionnalités et de changer vos priorités sans en payer un prix exorbitant;
+- d’être informé des modifications portées au calendrier de réalisation, assez tôt pour avoir la possibilité de réduire le périmètre fonctionnel et retomber ainsi sur la date de livraison initiale;
+- d’annuler le projet à tout moment et de disposer d’une application utile et utilisable en contrepartie de vos investissements à ce jour.
+
+---
+
+# Testeur
+
+**Tous** les tests en XP doivent être automatisés
+- Le testeur doit mettre en place les outils pour automatiser les tests (phase d’exploration)
+- Le testeur est le bras droit du client (car seuls les tests de recette définissent les besoins du client)
+- Il peut conseiller ou déconseiller le client et/ou les programmeurs
+- Il vérifie que toutes les demandes sont testables
+- Il assure la communication avec les programmeurs pour assurer la testabilité automatique du logiciel, notamment pour les interfaces graphiques
+
+---
+
+# Testeur
+
+A chaque début d’itération, le testeur aide le client à définir les tests de recette.
+- Chaque scénario donne lieu à au moins un test de recette.
+- Au plus tard au milieu d’une itération, les tests sont fournis à l’équipe.
+- Une fois que les tests passent, l’itération est terminée !
+- Motivant pour le client et les programmeurs, qui voient le projet avancer à chaque test nouvellement réussi.
+- Le testeur doit avertir les programmeurs des progrès effectués (graphique sur un mur, une cloche qui sonne à chaque nouveau test réussi, ...)
+
+---
+
+# Qui est un bon testeur ?
+
+Programmeur :
+- hétéroclite, bricoleur, capable de combiner des outils
+- rigoureux
+- intègre
+- bon esprit d’équipe
+- il doit chercher les problèmes dans le travail fourni... et annoncez les mauvaises nouvelles
+
+---
+
+# Tracker
+
+Les histoires sont divisées en tâches lors de chaque itération.
+- Pour chaque tâche un nom et une estimation seront indiquées.
+- Le tracker va suivre l’évolution de ces tâches au moins 2 fois par semaine ou plus fréquemment si nécessaire en parlant avec chaque programmeur.
+- «Ta tâche devait prendre 3 jours. Tu bosses dessus depuis 2 jours. Qu’en penses-tu ? »
+- Idée: détecter au plus vite les difficultés.
+
+---
+
+# Tracker
+
+Difficultés:
+- éviter de mettre une pression supplémentaire sur les programmeurs
+- savoir délier les langues («Oui oui ça ira...»)
+- Le tracker ne prend aucune mesure, il sert juste de révélateur.
+- Si problème => il en parle au coach
+
+---
+
+# Qui est un bon tracker ?
+
+- Une personne affable, qui ne donne pas l’impression de contrôler
+- Une personne à qui on se confie facilement.
+- De préférence pas un programmeur, pour éviter les discutions techniques !
+
+---
+
+# Manager
+
+- Supérieur technique des programmeurs, ne fait pas partie de l’équipe
+- S’occupe de la logistique : locaux, matériel, recrutement , paie 
+- Il demande des comptes à l’équipe
+- Résultats concrets et visibles (parce que XP)
+- Pas forcément le chef de projet dans les autres méthodologies
+
+---
+
+# Manager
+
+Il doit avoir le courage de laisser se dérouler le processus
+- Pas exiger des fonctionnalités si les programmeurs émettent un contre avis
+- Il doit veiller au respect:
+- des engagements
+- des avantages promis par la méthode
+- Si le projet est inclus dans un plus grand projet, il coordonne le tout
+
+---
+
+# Qui est un bon manager ?
+
+Souvent le chef de service de l’équipe
+- Chef de projet global si le projet est inclus dans un projet plus grand
+- Ou coordinateur technique.
+
+---
+
+# Coach
+
+Fait partie intégrante de l’équipe. Il vérifie que :
+- chacun joue son rôle
+- les pratiques XP sont respectées
+- l’équipe fait ce qu’elle a dit qu’elle ferait
+
+--- 
+
+# Coach
+
+Au début du projet, le coach est partout.
+- Il anime les séances de planification et les standup meetings
+- Il aide le client a rédigé ses scénarios
+- Il travaille avec les programmeurs pour inculquer la méthodologie XP
+- Il rassure le manager en expliquant pourquoi la méthode fonctionne.
+
+---
+
+# Coach
+
+Mais son but ultime est ... de se passer du coach !
+- il doit s’effacer petit à petit
+- laisser l’équipe découvrir ses propres solutions techniques
+- ça permet de favoriser la créativité du groupe
+
+---
+
+# Qui est un bon coach ?
+
+Quelqu’un qui connaît bien la méthode XP et en est convaincu !
+- Un expert technique, un programmeur chevronné ou un architecte de système
+- Fédérateur et une référence méthodologique et technique
+- Communicateur, pédagogue et sensible
+- Avoir du sang froid et rester calme lorsque tout le monde panique
+
+---
+
+# Répartition des rôles
+## Une personne pour plusieurs rôles ?
+
 <center>
 
-![](./img/work-in-progress.jpeg)
+![height:400px](./img/repartition.png)
 
 </center>
 
+---
+
+# Répartition des rôles
+## Un rôle pour plusieurs personnes
+
+- Programmeurs : min 2 personnes
+- Tracker : 1 personne à un moment donné
+- Coach : 1 seule personne
+- Manager : 1 seule personne
+- Client: peut être une équipe
+
+---
+
+# Comparaison avec l'organisation "classique"
+
+- Il n’y a pas d’équipe classique...
+- XP s’attache aux compétences métier:
+- les développeurs ne décident pas des fonctionnalités
+- les clients ne décident pas des charges et des délais de travail
+- Classique: il n’est pas rare que ce soit le chef de projet qui définisse les spécifications, le planning et le budget
+
+---
+
+# Comparaison avec l'organisation "classique"
+
+- en XP, il n’y a aucune hiérarchie ni aucune séparation des tâches au sein des programmeurs
+- pas d’architecte, pas de concepteurs, pas de testeurs
+- la responsabilité collective du code induit un non-partitionnement en sous-projets, modules et sous-modules, ne responsabilisant pas un développeur à une partie du projet (que fait-on lors d’un départ ?)
+
+---
+
+# Comparaison avec l'organisation "classique"
+
+- Quid des experts consultants en XP ?
+- Le consultant est appelé pour un problème précis (si possible, test déjà écrit pour le
+décrire)
+- Le consultant travaille toujours avec 2 programmeurs: apprentissage de nouveautés
+- L’équipe essaie seule de recommencer le travail
 
 ---
 <!-- _class: transition2 -->  
