@@ -1048,6 +1048,18 @@ La présence du client (ou d’un représentant) reste un **facteur clé de succ
 -->
 
 ---
+# Pratique IV : Planification itérative
+## Phase d’exploration des livraisons 
+### Chaque user story doit être **INVEST** :  
+
+- **I**ndépendante : peut être développée seule  
+- **N**égociable : flexible, pas figée dès le départ  
+- **V**alueable : apporte de la valeur au client ou à l’utilisateur  
+- **E**stimable : suffisamment claire pour estimer l’effort  
+- **S**mall (Petite) : réalisable en un seul sprint ou itération  
+- **T**estable : critères de succès précis et vérifiables
+
+---
 
 # Pratique IV : Planification itérative
 ## Phase d’exploration des livraisons
@@ -1372,162 +1384,192 @@ Une bonne équipe = plus de chance de réussite
 <div class="columns">
 <div align="center">
 
-## Listes des rôles à attribuer 
+<!-- _class: cool-list -->
 
-Programmeur·se (ou Développeur·se)
-Client·e
-Testeur·se
-Tracker
-Manager
-Coach
+1. *Programmeur·se - Développeur·se*
+1. *Client·e*
+1. *Testeur·se*
+1. *Tracker*
+1. *Manager*
+1. *Coach*
 
 </div>  
-<div>   
+<div align="center">   
 
-![backend h:400 left drop-shadow:0,5px,10px,rgba(0,0,0,.4)](../img/roles.png)
+![backend h:400 left drop-shadow:0,5px,10px,rgba(0,0,0,.4)](./img/roles.png)
 
 </div>    
 </div>   
 
 --- 
-# Programmeur·se
+# Programmeur·se : Tâches au sein de l'équipe
 
-Le terme Programmeur·se est plus large qu’au sens stricte
-- Il/Elle **code**  
-- Il/Elle **teste**  
-- Il/Elle **écoute le client** (pour écrire de bons tests)  
-- Il/Elle **conçoit (design)**
+
+<div align="center">
+
+<!-- _class: cool-list -->
+
+1. *Coder*  
+1. *Tester*
+1. *Écouter le client pour rédiger de bons tests*   
+1. *Concevoir (design)*
+ 
+</div>  
+
+---
+<!-- _class: cite -->        
 
 **Ses qualités humaines sont aussi importantes que ses qualités techniques.**
 
 --- 
-# Programmeur
+# Programmeur·se : senior et junior
 
 Au sein d’une équipe
-- il faut des éléments expérimentés avec l’envie de partager
-- les éléments moins expérimentés doivent avoir l’envie d’apprendre
+- il faut des éléments **expérimentés** avec l’envie de **partager**
+- les éléments **moins expérimentés** doivent avoir l’envie **d’apprendre**
 - le cadre d’XP est idéal pour l’apprentissage grâce à la communication
 
 --- 
-# Programmeur
+# Programmeur·se : motivation
 
-Pour motiver chaque programmeur
-- XP responsabilise chacun
+Pour motiver chaque programmeur·se, XP responsabilise chacun
 - dans le code, les tests, l’écoute du client
 - Seuls les programmeurs vont définir les charges et les délais
 - Pas les clients, le manager, le coach, ..
 
 ---
 
-# La charte des droits du programmeur
+# La charte des droits du programmeur·se
 
-**Développeurs, vous avez le droit**
-- de savoir ce qui est demandé, avec des priorités clairement déclarées;
-- de fournir un travail de qualité en toute occasion;
-- de demander et recevoir de l’aide de la part de vos pairs, de vos clients;
-- d’émettre et de réviser vos propres estimations de coûts;
-- d’accepter des responsabilités, qui ne peuvent vous être imposées;
-- de travailler à un rythme de travail durable.
-
----
-
-# Client
-
-- Définit **ce que fait le logiciel** et **comment**  
-- Communication constante avec l’équipe  
-- Définit besoins via **scénarios (user stories)**  
-- Peut être :  
-  - le vrai client  
-  - un représentant (proxy)  
-  - Si impossible: désignation d’un client artificiel qui jouera ce rôle
-  - la communication entre l’équipe et le vrai client ne passera que par une seule personne : Single person of contact **SPOC**
+**Développeur·ses, vous avez le droit**
+- de savoir ce qui est demandé, avec des **priorités clairement déclarées**
+- de fournir un **travail de qualité** en toute occasion
+- de demander et **recevoir de l’aide** de la part de vos pairs, de vos clients
+- d’émettre et de réviser vos propres **estimations** de coûts
+- d’**accepter des responsabilités**, qui ne peuvent vous être imposées
+- de travailler à un **rythme de travail durable**
 
 ---
 
-# La charte des droits du client
+# Client·e : Tâches au sein de l'équipe
 
-Client, vous avez le droit
-- à un plan d’ensemble, montrant ce qui peut être accompli, pour quand, à quel coût;
-- d’obtenir le plus de valeur possible de chaque semaine de programmation;
-- de voir des progrès sur une application qui marche, comme doivent le prouver les tests répétables que vous spécifiez;
-- de changer d’avis, de substituer des fonctionnalités et de changer vos priorités sans en payer un prix exorbitant;
-- d’être informé des modifications portées au calendrier de réalisation, assez tôt pour avoir la possibilité de réduire le périmètre fonctionnel et retomber ainsi sur la date de livraison initiale;
-- d’annuler le projet à tout moment et de disposer d’une application utile et utilisable en contrepartie de vos investissements à ce jour.
+<div align="center">
 
----
+<!-- _class: cool-list -->
 
-# Testeur
+1. *Définit ce que fait le logiciel et comment*
+1. *Communication constante avec l’équipe*
+1. *Définit besoins via scénarios (user stories)*
+1. *SPOC : Single person of contact*
 
-**Tous** les tests en XP doivent être automatisés
-- Le testeur doit mettre en place les outils pour automatiser les tests (phase d’exploration)
-- Le testeur est le bras droit du client (car seuls les tests de recette définissent les besoins du client)
-- Il peut conseiller ou déconseiller le client et/ou les programmeurs
-- Il vérifie que toutes les demandes sont testables
-- Il assure la communication avec les programmeurs pour assurer la testabilité automatique du logiciel, notamment pour les interfaces graphiques
+</div>  
 
 ---
 
-# Testeur
+# Client·e : Profil idéal
 
-A chaque début d’itération, le testeur aide le client à définir les tests de recette.
-- Chaque scénario donne lieu à au moins un test de recette.
-- Au plus tard au milieu d’une itération, les tests sont fournis à l’équipe.
-- Une fois que les tests passent, l’itération est terminée !
-- Motivant pour le client et les programmeurs, qui voient le projet avancer à chaque test nouvellement réussi.
-- Le testeur doit avertir les programmeurs des progrès effectués (graphique sur un mur, une cloche qui sonne à chaque nouveau test réussi, ...)
+<div align="center">   
 
----
+*On choisit le **vrai** client ou un représentant (proxy)*
 
-# Qui est un bon testeur ?
+Si impossible, on désigne un client artificiel qui jouera ce rôle
 
-Programmeur :
-- hétéroclite, bricoleur, capable de combiner des outils
-- rigoureux
-- intègre
-- bon esprit d’équipe
-- il doit chercher les problèmes dans le travail fourni... et annoncez les mauvaises nouvelles
+
+</div>    
+</div>  
 
 ---
 
-# Tracker
+# La charte des droits du client·e
 
-Les histoires sont divisées en tâches lors de chaque itération.
-- Pour chaque tâche un nom et une estimation seront indiquées.
-- Le tracker va suivre l’évolution de ces tâches au moins 2 fois par semaine ou plus fréquemment si nécessaire en parlant avec chaque programmeur.
-- «Ta tâche devait prendre 3 jours. Tu bosses dessus depuis 2 jours. Qu’en penses-tu ? »
-- Idée: détecter au plus vite les difficultés.
+Client·e, vous avez le droit :
 
----
-
-# Tracker
-
-Difficultés:
-- éviter de mettre une pression supplémentaire sur les programmeurs
-- savoir délier les langues («Oui oui ça ira...»)
-- Le tracker ne prend aucune mesure, il sert juste de révélateur.
-- Si problème => il en parle au coach
+- **à un plan d’ensemble**, montrant ce qui peut être accompli, pour quand, à quel coût
+- d’**obtenir le plus de valeur possible** de chaque semaine de programmation
+- de **voir des progrès** sur une application qui marche, comme doivent le prouver les tests répétables que vous spécifiez
+- de **changer d’avis**, de substituer des fonctionnalités et de changer vos priorités sans en payer un prix exorbitant
+- d’**être informé** des modifications portées au calendrier de réalisation, assez tôt pour avoir la possibilité de réduire le périmètre fonctionnel et retomber ainsi sur la date de livraison initiale
+- d’**annuler le projet à tout moment** et de disposer d’une application utile et utilisable en contrepartie de vos investissements à ce jour
 
 ---
 
-# Qui est un bon tracker ?
+# Testeur·se : Tâches au sein de l'équipe
 
-- Une personne affable, qui ne donne pas l’impression de contrôler
-- Une personne à qui on se confie facilement.
-- De préférence pas un programmeur, pour éviter les discutions techniques !
-
----
-
-# Manager
-
-- Supérieur technique des programmeurs, ne fait pas partie de l’équipe
-- S’occupe de la logistique : locaux, matériel, recrutement , paie 
-- Il demande des comptes à l’équipe
-- Résultats concrets et visibles (parce que XP)
-- Pas forcément le chef de projet dans les autres méthodologies
+- Tous les tests doivent être **automatisés**
+- Met en place les **outils** nécessaires (phase d’exploration)
+- Vérifie que toutes les demandes sont **testables**
+- Bras droit du client : les **tests de recette** expriment les besoins
+- Fait le lien avec les programmeurs pour assurer la **testabilité automatique** (y compris UI)
 
 ---
 
-# Manager
+# Testeur·se : Collaboration avec le client
+
+- Début d’itération : aide le client à **définir les tests de recette**
+- Chaque scénario donne lieu à **au moins un test de recette**
+- Les tests doivent être fournis **au plus tard au milieu de l’itération**
+- Fin d’itération : si tous les tests passent, l’itération est **terminée**
+
+---
+
+# Testeur·se : Communication et Motivation
+
+- Informe les programmeurs des progrès effectués  (graphiques visibles, notifications, célébrations)
+- Encourage une vision partagée des objectifs
+- Garant·e de la **qualité continue** du produit
+
+---
+
+# Testeur·se : Profil idéal
+
+- **Polyvalent·e** et créatif·ve (bricoleur·se d’outils)
+- **Rigoureux·se** et **intègre**
+- Bon·ne communicant·e, esprit d’équipe
+- Aime chercher les **problèmes cachés**
+- Sait annoncer les mauvaises nouvelles
+
+
+---
+
+# Tracker : Tâches au sein de l'équipe
+
+- Suit l’évolution des **histoires** et **tâches** à chaque itération
+- Vérifie régulièrement l’avancement (au moins 2 fois/semaine)
+- Détecte rapidement les **difficultés** rencontrées par l’équipe
+- Sert de **révélateur** de problèmes, sans chercher à les résoudre
+- Remonte les blocages éventuels au **coach**
+
+---
+
+# Tracker : Posture et difficultés
+
+- Ne doit pas mettre de **pression** supplémentaire sur les programmeurs
+- Doit savoir **faire parler** les membres de l’équipe
+  («Ta tâche devait prendre 3 jours, tu en es à 2, qu’en penses-tu ?»)
+- Reste neutre : observe, questionne, alerte
+
+---
+
+# Tracker : Profil idéal
+
+- **Affable**, inspire confiance, non intrusif·ve
+- À qui on se confie facilement
+- De préférence **pas programmeur·se**, pour éviter les débats techniques
+
+
+---
+
+# Manager : Tâches au sein de l'équipe
+
+- Supérieur technique des programmeurs, **extérieur à l’équipe XP**
+- Gère la **logistique** : locaux, matériel, recrutement, paie
+- Suit les **résultats concrets et visibles** du projet
+- Ne correspond pas forcément au rôle de chef de projet traditionnel
+- Demande des comptes à l’équipe tout en respectant le processus XP
+
+---
+
+# Manager : Posture et difficultés
 
 Il doit avoir le courage de laisser se dérouler le processus
 - Pas exiger des fonctionnalités si les programmeurs émettent un contre avis
@@ -1538,60 +1580,80 @@ Il doit avoir le courage de laisser se dérouler le processus
 
 ---
 
-# Qui est un bon manager ?
+# Manager : Profil idéal
 
 Souvent le chef de service de l’équipe
 - Chef de projet global si le projet est inclus dans un projet plus grand
 - Ou coordinateur technique.
 
+- Souvent chef·fe de service de l’équipe  
+- Peut être **chef·fe de projet global** si le projet s’inscrit dans un programme plus large  
+- Peut également agir comme **coordinateur·rice technique**
+
 ---
 
-# Coach
+# Coach : Tâches au sein de l'équipe
 
-Fait partie intégrante de l’équipe. Il vérifie que :
-- chacun joue son rôle
-- les pratiques XP sont respectées
-- l’équipe fait ce qu’elle a dit qu’elle ferait
+- Membre à part entière de l’équipe
+- S’assure que :
+  - chacun joue son rôle
+  - les pratiques XP sont respectées
+  - l’équipe tient ses engagements
+- Garant·e du cadre méthodologique
 
 --- 
 
-# Coach
+# Coach : Début du projet
 
 Au début du projet, le coach est partout.
-- Il anime les séances de planification et les standup meetings
-- Il aide le client a rédigé ses scénarios
-- Il travaille avec les programmeurs pour inculquer la méthodologie XP
-- Il rassure le manager en expliquant pourquoi la méthode fonctionne.
+
+- Anime les séances de planification et les stand-ups
+- Aide le client à rédiger ses scénarios
+- Accompagne les programmeurs dans l’adoption des pratiques XP
+- Rassure les managers en expliquant les bénéfices de la méthode
 
 ---
 
-# Coach
+# Coach : Un rôle éphémère
 
-Mais son but ultime est ... de se passer du coach !
-- il doit s’effacer petit à petit
-- laisser l’équipe découvrir ses propres solutions techniques
-- ça permet de favoriser la créativité du groupe
+- But ultime : **ne plus avoir besoin du coach**
+- S’efface progressivement
+- Laisse l’équipe trouver ses propres solutions
+- Favorise l’autonomie et la créativité collective
 
 ---
 
-# Qui est un bon coach ?
+# Coach : Profil idéal
 
-Quelqu’un qui connaît bien la méthode XP et en est convaincu !
-- Un expert technique, un programmeur chevronné ou un architecte de système
-- Fédérateur et une référence méthodologique et technique
-- Communicateur, pédagogue et sensible
-- Avoir du sang froid et rester calme lorsque tout le monde panique
+- Maîtrise la méthode XP et y croit profondément  
+- Expérience technique solide (programmeur·se confirmé·e, architecte, expert·e système)  
+- Référence à la fois **méthodologique** et **technique**  
+- Excellent·e communicant·e, pédagogue et à l’écoute  
+- Calme et posé·e, capable de garder son sang-froid en période de crise  
 
 ---
 
 # Répartition des rôles
 ## Une personne pour plusieurs rôles ?
 
-<center>
+|               | Dev | Client   | Testeur  | Tracker  | Manager  | Coach   |
+|---------------|------------|---------|---------|---------|---------|--------|
+| **Dev** | 🟩✅        | 🟥❌     | 🟨⚠️     | 🟨⚠️     | 🟥❌     | 🟨⚠️    |
+| **Client**      | 🟥❌        | 🟩✅     | 🟩✅     | 🟥❌     | 🟥❌     | 🟥❌    |
+| **Testeur**     | 🟨⚠️        | 🟩✅     | 🟩✅     | 🟥❌     | 🟥❌     | 🟥❌    |
+| **Tracker**     | 🟨⚠️        | 🟥❌     | 🟥❌     | 🟩✅     | 🟨⚠️     | 🟨⚠️    |
+| **Manager**     | 🟥❌        | 🟥❌     | 🟥❌     | 🟨⚠️     | 🟩✅     | 🟥❌    |
+| **Coach**       | 🟨⚠️        | 🟥❌     | 🟥❌     | 🟨⚠️     | 🟥❌     | 🟩✅    |
 
-![height:400px](./img/repartition.png)
+<!--
 
-</center>
+Les rôles centraux de développement et test (Programmeur, Testeur) peuvent parfois être combinés entre eux ou avec Tracker/Client avec prudence.
+
+Les rôles de supervision ou coaching (Manager, Coach) ne doivent pas cumuler les rôles techniques ou clients pour rester neutres.
+
+Tracker est plus flexible, peut être combiné avec Testeur ou Client
+
+-->
 
 ---
 
@@ -1608,29 +1670,31 @@ Quelqu’un qui connaît bien la méthode XP et en est convaincu !
 
 # Comparaison avec l'organisation "classique"
 
-- Il n’y a pas d’équipe classique...
-- XP s’attache aux compétences métier:
-- les développeurs ne décident pas des fonctionnalités
-- les clients ne décident pas des charges et des délais de travail
-- Classique: il n’est pas rare que ce soit le chef de projet qui définisse les spécifications, le planning et le budget
+- XP ne suit pas le modèle d’équipe classique : hiérarchie et rôles fixes sont absents  
+- Les responsabilités sont basées sur **les compétences métier** :  
+  - Les développeurs ne décident pas des fonctionnalités  
+  - Les clients ne fixent pas les charges ni les délais  
+- Dans les organisations classiques, le chef de projet définit souvent **spécifications, planning et budget**
 
 ---
 
-# Comparaison avec l'organisation "classique"
+# Organisation interne en XP
 
-- en XP, il n’y a aucune hiérarchie ni aucune séparation des tâches au sein des programmeurs
-- pas d’architecte, pas de concepteurs, pas de testeurs
-- la responsabilité collective du code induit un non-partitionnement en sous-projets, modules et sous-modules, ne responsabilisant pas un développeur à une partie du projet (que fait-on lors d’un départ ?)
+- Pas de hiérarchie ni de séparation stricte des tâches parmi les programmeurs  
+- Pas de rôles fixes comme architecte, concepteur ou testeur  
+- La responsabilité du code est **collective** :  
+  - Le projet n’est pas fragmenté en modules ou sous-modules  
+  - Chaque développeur peut intervenir sur n’importe quelle partie du projet  
+  - Cela facilite la continuité si quelqu’un quitte l’équipe
 
 ---
 
-# Comparaison avec l'organisation "classique"
+# Rôle des consultants en XP
 
-- Quid des experts consultants en XP ?
-- Le consultant est appelé pour un problème précis (si possible, test déjà écrit pour le
-décrire)
-- Le consultant travaille toujours avec 2 programmeurs: apprentissage de nouveautés
-- L’équipe essaie seule de recommencer le travail
+- Interviennent pour un **problème spécifique** (idéalement avec un test déjà écrit)  
+- Travaillent toujours **avec deux programmeurs** : apprentissage et transfert de compétences  
+- L’équipe reprend ensuite seule le travail, renforçant **l’autonomie et l’auto-apprentissage**
+
 
 ---
 <!-- _class: transition2 -->  
